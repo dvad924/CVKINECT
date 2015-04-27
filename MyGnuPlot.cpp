@@ -3,14 +3,13 @@
 using namespace std;
 MyGnuPlot::MyGnuPlot() : gp("gnuplot -persist")
 {
-	gp << "set xrange [-1:1]\nset yrange[-1,1]\n";
+	gp << "set xrange [0:1]\nset yrange[0,1]\n";
 	gp << "plot '-' with lines title DistancePoints\n";
 }
 
 
 MyGnuPlot::~MyGnuPlot()
 {
-	datastack.clear();
 }
 
 void MyGnuPlot::livetest()
@@ -50,14 +49,9 @@ void MyGnuPlot::livetest()
 #endif
 }
 
-void MyGnuPlot::addpoint(double x, double y){
-	datastack.push_back(boost::make_tuple(x, y));
-}
-void MyGnuPlot::clear()
+
+void MyGnuPlot::graph(vector<boost::tuple<double,double>> datastack)
 {
-	datastack.clear();
-}
-void MyGnuPlot::graph()
-{
+	gp << "plot '-' with points title 'angle vs distance '\n";
 	gp.send1d(datastack);
 }

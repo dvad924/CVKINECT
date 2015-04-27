@@ -107,7 +107,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\david\cpp\boost_1_57_0\stage\lib;$(OPENCV_DIR)\lib;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kinect20.lib;opencv_core2410d.lib;opencv_highgui2410d.lib;opencv_imgproc2410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kinect20.lib;opencv_core2410d.lib;opencv_highgui2410d.lib;opencv_imgproc2410d.lib;opencv_features2d2410d.lib;opencv_calib3d2410d.lib;opencv_nonfree2410d.lib;opencv_flann2410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
