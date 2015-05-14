@@ -148,6 +148,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dataloader.h" />
     <ClInclude Include="MyGnuPlot.h" />
     <ClInclude Include="MyMatlabConn.h" />
     <ClInclude Include="MyKinect.h" />
@@ -159,6 +160,7 @@
     <ClCompile Include="MyGnuPlot.cpp" />
     <ClCompile Include="MyKinect.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="dataloader.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -3,5 +3,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LocalDebuggerEnvironment>C:\Program Files %28x86%29\MATLAB\R2013a Student\bin\win64</LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>arg</LocalDebuggerCommandArguments>
   </PropertyGroup>
 </Project>

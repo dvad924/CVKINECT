@@ -52,6 +52,6 @@ void MyGnuPlot::livetest()
 
 void MyGnuPlot::graph(vector<boost::tuple<double,double>> datastack)
 {
-	gp << "plot '-' with points title 'angle vs distance '\n";
+	gp << "plot '-' with lines title 'angle vs distance '\n";
 	gp.send1d(datastack);
 }
