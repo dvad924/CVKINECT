@@ -55,6 +55,7 @@ pCoordinateMapper(nullptr)
 	rockgests.clear();
 	calcSigs(thumbgests, &thumbsigs);
 	thumbgests.clear();
+	runLooTest(csigs, rocksigs, thumbsigs);
 }
 
 MyKinect::~MyKinect()
